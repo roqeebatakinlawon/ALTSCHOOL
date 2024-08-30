@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media</title>
+
+    <link rel="stylesheet" href="./Styles/media.css" />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="about-me.html">Home</a></li>
+        <li><a href="table.html">Course table</a></li>
+        <li><a href="application-form.html">Form page</a></li>
+        <li><a href="media.html">Media</a></li>
+      </ul>
+    </nav>
+    <h1>Media</h1>
+    <main>
+      <section class="image">
+        <figure>
+          <picture>
+            <source
+              media="(min-width :1020px)"
+              srcset="./asset/akinlawon-large.jpg"
+            />
+            <source
+              media="(min-width :650px)"
+              srcset="./asset/akinlawon-medium.jpg"
+            />
+            <source
+              media="(min-width :320px)"
+              srcset="./asset/akinlawon-small.jpg"
+            />
+            <img src="./asset/akinlawon-large.jpg" alt="akinlawon" />
+          </picture>
+          <figcaption>AKINLAWON</figcaption>
+        </figure>
+      </section>
+      <section class="audio">
+        <h2>Audio</h2>
+        <audio controls>
+          <source
+            src="./asset/Rema, Selena Gomez - Calm Down (Lyrics).mp3"
+            type="audio/mp3"
+          />
+          <source src="./asset/ogg file.ogg" type="audio/ogg" />
+          <source src="./asset/wav file.wav" type="audio/wav" />
+          browser does not support the audio element.
+        </audio>
+      </section>
+      <section class="video">
+        <h2>Video</h2>
+        <video controls>
+          <source src="./asset/mov file.mov" type="video/mov" />
+          <source src="./asset/webm file.webm" type="video/webm" />
+          <source src="./asset/wmv file.wmv" type="video/wmv" />
+          Browser does not support video element.
+        </video>
+      </section>
+      <section class="iframe">
+        <h2>Iframe</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/NqSoOFe0738?si=5gGzIeuerIMOdnm4"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </section>
+    </main>
+  </body>
+</html>

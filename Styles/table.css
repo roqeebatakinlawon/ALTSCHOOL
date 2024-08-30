@@ -1,0 +1,19 @@
+h1, h2{
+    color: rgb(91, 4, 99);
+}
+.nav-bar{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding: 20px;
+     background-color: #084696;
+}
+*{
+    box-sizing: border-box;
+    background-color: rgb(87, 101, 229);
+    color: white;
+    text-decoration: none;
+/ } 
+li{
+    display: inline-block;
+}

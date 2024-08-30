@@ -1,0 +1,388 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-size: 16px;
+  overflow-y: scroll;
+  font-family: "Inter";
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.gridcontainer {
+  display: flex;
+  height: 100vh;
+}
+
+.altschoollogo {
+  display: none;
+}
+
+.altschool {
+  width: 45%;
+  padding: 67px;
+  background-color: #fffcf8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+img {
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.learn {
+  font-size: 35px;
+  font-weight: bold;
+  width: 400px;
+  text-align: center;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 20px;
+  color: #0367f2;
+}
+
+.svg {
+  color: #0367f2;
+}
+
+.tel {
+  font-size: 12px;
+}
+
+.container {
+  background: padding-box;
+  overflow-y: auto;
+  width: 55%;
+  padding: 40px;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.already-sign {
+  display: flex;
+  overflow: hidden;
+  margin: 0;
+  float: right;
+  gap: 5px;
+}
+
+.already {
+  list-style: none;
+  font-weight: bold;
+}
+
+.signin {
+  list-style: none;
+  color: #0367f2;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  color: rgb(32, 84, 210);
+}
+
+.gridcontainer2 {
+  display: grid;
+  gap: 20px;
+  padding: 70px 30px;
+}
+
+.signup {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+p {
+  color: rgb(133, 136, 141);
+}
+
+form {
+  display: grid;
+  gap: 20px;
+  width: fit-content;
+}
+
+.first-last,
+.gender-birth,
+.email-number,
+.country-city,
+.password {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
+  gap: 20px;
+}
+.gap,
+.hear {
+  display: grid;
+  gap: 10px;
+}
+
+input[type="password"] {
+  border: 0;
+}
+
+input[type="date"] {
+  width: 80%;
+}
+
+.password2 {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  border: 1px solid #d9d9d9;
+}
+
+.click {
+  width: 360px;
+}
+
+input,
+textarea {
+  padding: 4px 11px;
+  border: 1px solid #d9d9d9;
+  background-color: rgb(250, 250, 250);
+  color: rgb(0, 0, 0, 0.85);
+  font-family: "Inter";
+}
+input:focus {
+  outline: none;
+}
+
+textarea {
+  width: 90%;
+  border: 1px solid transparent;
+  border-radius: 6px;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: rgb(106, 111, 245);
+  padding: 16px 0px;
+  border: 0;
+  font-size: 16px;
+  color: white;
+
+  font-family: "Inter";
+  border-radius: 6px;
+}
+
+@media only screen and (max-width: 700px) {
+  .altschoollogo {
+    display: block;
+    margin: auto;
+  }
+
+  .gridcontainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .altschool {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .gridcontainer2 {
+    padding: 15px 15px 90px;
+    margin-top: 35px;
+  }
+
+  .already-sign {
+    justify-content: center;
+    padding: 0;
+    float: none;
+  }
+
+  .first-last,
+  .gender-birth,
+  .email-number,
+  .country-city,
+  .password {
+    grid-template-columns: 1fr;
+  }
+
+  .signup {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  input {
+    width: 90%;
+  }
+
+  .password2 {
+    width: 92%;
+  }
+
+  input[type="date"] {
+    width: 90%;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .submit {
+    width: 95%;
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 365px) {
+  input {
+    width: 80%;
+  }
+  input[type="date"] {
+    width: 80%;
+  }
+  .password2 {
+    width: 84%;
+  }
+
+  textarea {
+    width: 80%;
+  }
+
+  .submit {
+    width: 87%;
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 710px) and (max-width: 810px) {
+  .altschoollogo {
+    display: block;
+    margin: auto;
+  }
+
+  .gridcontainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .altschool {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .gridcontainer2 {
+    padding: 15px 15px 90px;
+    margin-top: 35px;
+  }
+
+  .already-sign {
+    justify-content: center;
+    padding: 0;
+    float: none;
+  }
+
+  .first-last,
+  .gender-birth,
+  .email-number,
+  .country-city,
+  .password {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  input {
+    width: 90%;
+  }
+
+  input[type="date"] {
+    width: 90%;
+  }
+
+  form {
+    width: 100%;
+    gap: 35px;
+  }
+
+  textarea {
+    width: 95%;
+  }
+
+  p {
+    font-size: 15px;
+  }
+  .click {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 810px) and (max-width: 1023px) {
+  .altschool {
+    width: 30%;
+    gap: 5px;
+  }
+
+  img {
+    width: 322px;
+  }
+
+  .learn {
+    font-size: 27px;
+  }
+
+  .africa {
+    font-size: 11px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 15px 15px 90px;
+  }
+
+  .gridcontainer2 {
+    padding: 70px 0px;
+  }
+
+  input {
+    width: 80%;
+  }
+
+  form {
+    gap: 30px;
+  }
+}

@@ -1,0 +1,63 @@
+/* base css */
+
+html {
+  font-size: 1rem;
+  background-color: rgb(196, 243, 196);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  font-size: larger;
+}
+
+main {
+  padding: 0 2em;
+}
+
+section {
+  margin-top: 40px;
+}
+
+.image {
+  background-color: rgb(97, 83, 4);
+  display: flex;
+  justify-content: center;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.audio {
+  background-color: rgb(97, 97, 173);
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-left: 400px;
+  margin-right: 400px;
+}
+
+.video {
+  background-color: rgb(92, 4, 92);
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.iframe {
+  background-color: rgb(248, 165, 248);
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-left: 300px;
+  margin-right: 300px;
+}
